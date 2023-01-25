@@ -48,3 +48,6 @@ The Vagrant Commands are following
 First of we need to install any of the VM provisioning,here am using Virtual Box. And also install Vagrant on your local machine
 
 For more follow https://developer.hashicorp.com/vagrant/docs
+
+Also it having 2 scripts, one is workstation and other is client. It will install Ansible and Python. Also it will create a new user with sudo privilleges. 
+ 
