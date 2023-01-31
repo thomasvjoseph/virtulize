@@ -14,7 +14,9 @@ Vagrant.configure("2") do |config|
     m01.vm.provision "shell" do |s|
       p = File.expand_path("../", __FILE__)
       s.path = p + "\\workstation.sh"
-    end 
+    end
+    ## OR ##	  
+    #m01.vm.provision "shell",path: "workstation.sh"	  
   end  
 ### Ansible Workstation 1 or Slave 1  ####
   config.vm.define "app01" do |app01|
@@ -24,7 +26,7 @@ Vagrant.configure("2") do |config|
     app01.vm.provision "shell" do |s|
       p = File.expand_path("../", __FILE__)
       s.path = p + "\\client.sh"
-    end 
+    end 	  
   end
 ### Ansible Workstation 2 or Slave 2  #### 
   config.vm.define "app02" do |app02|
